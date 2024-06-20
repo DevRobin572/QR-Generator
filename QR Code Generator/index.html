@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>QR Code Generator</h2>
+        <div class="qr-container">
+            <img src="" id="img" class="hidden">
+        </div>
+        <select id="size">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
+            <option value="250" selected>250x250</option>
+            <option value="300">300x300</option>
+        </select>
+        <textarea placeholder="Enter Your Text" id="qrtext"></textarea>
+        <button id="generateBtn" onclick="genQR()">Generate QR Code</button>
+        <p>Developed By <a class="owner" href="https://www.linkedin.com/in/devrobin572" target="_blank">Robin Hossain</a></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
